@@ -1,9 +1,9 @@
 food(pizza).
-food(rise).
+food(rice).
 bird(parrot).
 island(srilanka).
 animal(dog).
-fuit(kiwi).
+fruit(kiwi).
 weapon(gun).
 hardware(keyboard).
 androidPhone(samsung).
@@ -34,3 +34,4 @@ month(september).
 month(october).
 month(november).
 month(december).
+
