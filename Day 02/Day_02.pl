@@ -64,7 +64,10 @@ granddaughter(X, Y) :- parent(Y, Z), parent(Z, X), female(X).
 happy(X) :- parent(X, _).
 
 % 18. For all X, if X has a child who has a sisiter then X has 2 children.
+two_children(X) :- parent(X, Y), sister(Y, Z), Y \= Z.
 
 % 19. Define the relation aunti(X, Y) in term of the relation parent and sister.
-% 20. Define the relation uncle using the appropriate relations.
+aunti(X, Y) :- parent(Z, Y), sister(X, Z).
 
+% 20. Define the relation uncle using the appropriate relations.
+uncle(X, Y) :- parent(Z, Y), brother(X, Z).
