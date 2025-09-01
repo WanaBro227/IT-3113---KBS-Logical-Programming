@@ -6,19 +6,47 @@ parent(bob,pat).
 parent(pat,jim).
 
 % 01. Is Bob a parent of Tom ?
+% parent(bob, tom).
+
 % 02. Is Tom a parent of Bob ?
+% parent(tom, bob).
+
 % 03. Who is Pat's parent ?
+% parent(X, pat).
+
 % 04. Is Liz a parent of Pat ?
+% parent(liz, pat).
+
 % 05. Is Tom a parent of Ben ?
+% parent(tom, ben).
+
 % 06. Who are Bob's parent ?
+% parent(X, bob).
+
 % 07. Who is a parent of whom ?
+% parent(X, Y).
+
 % 08. Who is grandparent of Jim ?
+% grandparent(X, Y).
+
 % 09. Who are Tom's grand children ?
+% grandchild(X, tom).
+
 % 10. Do Ann and Pat have common parent ?
+common_parent(X, Y) :- parent(Z, X), parent(Z, Y).
+% common_parent(ann, pat).
+
 % 11. Do Ann and Tom have a common parent ?
+% common_parent(ann, tom).
+
 % 12. Who is Pat's parent ?
+% parent(X, pat).
+
 % 13. Does Liz has a child ?
+% parent(liz, X).
+
 % 14. Who is Pat's grandparent ?
+% grandparent(X, pat).
 
 male(tom).
 male(bob).
